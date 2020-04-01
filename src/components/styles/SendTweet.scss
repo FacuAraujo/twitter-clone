@@ -1,0 +1,33 @@
+@import '../../variables';
+
+.Input-Container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Input-Text {
+  font-size: 20px;
+  color: $light;
+}
+
+.Tweet-btn {
+  align-self: flex-start;
+}
+
+.Tweet-Area {
+  background: none;
+  border: none;
+  font-size: 20px;
+  padding: 0;
+  color: $white;
+  // resize: none;
+}
+
+.Tweet-Area:focus {
+  background: none;
+  border: none;
+  font-size: 20px;
+  padding: 0;
+  box-shadow: none;
+  color: $white;
+}

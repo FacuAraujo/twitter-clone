@@ -1,14 +1,7 @@
 import React from 'react';
 
-import { useUser } from './session/hooks';
+import Home from './pages/Home';
 
-const App = () => {
-  const user = useUser();
-  return (
-    <h1>
-      Bienvenido {user.displayName} - {user.email}
-    </h1>
-  );
-};
+const App = () => <Home />;
 
 export default App;

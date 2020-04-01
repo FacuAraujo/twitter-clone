@@ -1,0 +1,18 @@
+@import '../../variables';
+
+header {
+  padding: 30px 0;
+  margin-bottom: 50px;
+}
+
+.Avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: $light;
+}
+
+.User-Name {
+  font-size: 20px;
+}
