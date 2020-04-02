@@ -1,14 +1,16 @@
 import React from 'react';
 
-import PageLoading from '../../components/PageLoading';
+import './styles/Login.scss';
 
-const Login = ({ signIn, status }) => (
-  <div>
-    {status === 'init' && <PageLoading />}
-    {status === 'restored' && (
-      <button onClick={signIn}>Iniciar sesión con Google</button>
-    )}
-  </div>
+import LoginForm from '../components/LoginForm';
+import TwitterLogo from '../../assets/images/twitter-logo.svg';
+
+const Login = () => (
+  <section className="Login-Container">
+    <img src={TwitterLogo} alt="twitter logo" className="Twitter-Logo" />
+    <h1 className="Login-Header">Iniciar sesión en TwitterClone</h1>
+    <LoginForm />
+  </section>
 );
 
 export default Login;

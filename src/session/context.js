@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 
 import auth from './api';
-import Login from './screens/Login';
+import Auth from './screens/Auth';
 
 const SessionContext = React.createContext(null);
 
@@ -17,10 +17,21 @@ const SessionProvider = ({ children }) => {
     });
   }, []);
 
-  if (!user) return <Login signIn={auth.signIn} status={status} />;
-
   const state = { user };
-  const actions = { signOut: auth.signOut, signIn: auth.signIn };
+  const actions = {
+    signOut: auth.signOut,
+    signIn: { google: auth.signInGoogle, email: auth.signInEmail },
+    createAcc: auth.createEmail
+  };
+
+  if (!user)
+    return (
+      <Auth
+        signIn={actions.signIn}
+        createAcc={actions.createAcc}
+        status={status}
+      />
+    );
 
   return (
     <SessionContext.Provider value={{ state, actions }}>
