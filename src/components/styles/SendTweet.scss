@@ -14,13 +14,22 @@
   align-self: flex-start;
 }
 
+.Tweet-btn:disabled {
+  background-color: $primaryDark;
+  border-color: $primaryDark;
+}
+
 .Tweet-Area {
   background: none;
   border: none;
   font-size: 20px;
   padding: 0;
   color: $white;
-  // resize: none;
+  resize: none;
+}
+
+.Tweet-Area:focus::placeholder {
+  color: lighten($light, 30%);
 }
 
 .Tweet-Area:focus {
