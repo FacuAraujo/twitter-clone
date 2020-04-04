@@ -2,7 +2,7 @@
 
 header {
   padding: 30px 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .Avatar {
@@ -15,4 +15,16 @@ header {
 
 .User-Name {
   font-size: 20px;
+}
+
+.LogOut {
+  font-size: 12px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: all 0.28s;
+  color: $light;
+}
+
+.LogOut:hover {
+  color: red;
 }
