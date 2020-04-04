@@ -1,6 +1,6 @@
 @import '../../variables';
 
-.Input-Container {
+.Input-Container form {
   display: flex;
   justify-content: space-between;
 }
@@ -12,6 +12,7 @@
 
 .Tweet-btn {
   align-self: flex-start;
+  font-weight: bold;
 }
 
 .Tweet-btn:disabled {
