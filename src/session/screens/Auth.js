@@ -15,7 +15,7 @@ const Auth = ({ signIn, createAcc, status }) => (
             <Login signInGoogle={signIn.google} signInEmail={signIn.email} />
           </Route>
           <Route exact path="/register">
-            <Register createAcc={createAcc} />
+            <Register createAcc={createAcc} signInGoogle={signIn.google} />
           </Route>
         </Switch>
       </BrowserRouter>

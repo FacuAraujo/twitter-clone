@@ -38,13 +38,33 @@
   height: 47px;
   font-weight: bold;
   margin: 20px 0 30px 0;
+  display: flex;
+  justify-content: center;
 
   &:disabled {
     background-color: $primaryDark;
     border-color: $primaryDark;
   }
+
+  .circle:after {
+    border-top-color: $primaryVeryDark;
+  }
+
+  .circle:before {
+    border: 4px solid $primaryDark;
+  }
 }
 
-.Register-Link {
-  color: $primary;
+.Error {
+  .Register-Label {
+    color: red;
+  }
+
+  .Register-Input {
+    border-color: red;
+  }
+}
+
+.Error-Message {
+  color: red;
 }

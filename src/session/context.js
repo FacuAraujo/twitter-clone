@@ -12,12 +12,12 @@ const SessionProvider = ({ children }) => {
   useEffect(() => {
     auth.onChange(user => {
       setUser(user);
-
       setStatus('restored');
     });
   }, []);
 
   const state = { user };
+
   const actions = {
     signOut: auth.signOut,
     signIn: { google: auth.signInGoogle, email: auth.signInEmail },
