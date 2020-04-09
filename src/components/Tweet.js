@@ -24,8 +24,10 @@ const Tweet = ({
       return `${difDatesSeconds}s`;
     } else if (difDatesSeconds / 60 < 59) {
       return `${Math.round(difDatesSeconds / 60)}min`;
-    } else {
+    } else if (difDatesSeconds / 60 / 60 < 24) {
       return `${Math.round(difDatesSeconds / 60 / 60)}h`;
+    } else {
+      return `Hace ${Math.round(difDatesSeconds / 60 / 60 / 24)} días`;
     }
   };
 
