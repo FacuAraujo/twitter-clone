@@ -5,7 +5,12 @@ header {
   margin-bottom: 30px;
 }
 
-.Avatar {
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.Header-Avatar {
   width: 80px;
   height: 80px;
   border-radius: 50%;
@@ -13,7 +18,7 @@ header {
   background-color: $light;
 }
 
-.User-Name {
+.row .User-Name {
   font-size: 20px;
 }
 
@@ -27,4 +32,20 @@ header {
 
 .LogOut:hover {
   color: red;
+}
+
+@media (max-width: 576px) {
+  .Header-Avatar {
+    width: 60px;
+    height: 60px;
+  }
+
+  .row .User-Name {
+    font-size: 20px;
+    .LogOut {
+      display: block;
+      margin-left: 0;
+      margin-top: 3px;
+    }
+  }
 }

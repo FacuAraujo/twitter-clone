@@ -1,11 +1,22 @@
 import React from 'react';
 
 import DeleteTweet from './DeleteTweet';
+import Like from './Like';
 
 import './styles/Tweet.scss';
 
-const Tweet = ({ text, remove, date, userName, avatar, userTweet }) => {
-  const tweetDate = date => {
+const Tweet = ({
+  text,
+  remove,
+  date,
+  userName,
+  avatar,
+  userTweet,
+  likes,
+  removeLike,
+  addLike,
+}) => {
+  const tweetDate = (date) => {
     const actualDate = new Date();
     const difDatesSeconds = Math.round((actualDate - date) / 1000);
 
@@ -24,7 +35,7 @@ const Tweet = ({ text, remove, date, userName, avatar, userTweet }) => {
 
   return (
     <div className="Tweet-Container">
-      <div className="Avatar">
+      <div className="Tweet-Avatar">
         <img src={avatar} alt="avatar" />
       </div>
       <div className="col Tweet-Content">
@@ -35,7 +46,10 @@ const Tweet = ({ text, remove, date, userName, avatar, userTweet }) => {
         {text}
       </div>
 
-      {userTweet && <DeleteTweet handleDeleteTweet={handleDeleteTweet} />}
+      <div className="Tweet-Actions">
+        {userTweet && <DeleteTweet handleDeleteTweet={handleDeleteTweet} />}
+        <Like addLike={addLike} removeLike={removeLike} likes={likes} />
+      </div>
     </div>
   );
 };

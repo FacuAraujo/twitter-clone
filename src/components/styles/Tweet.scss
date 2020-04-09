@@ -20,7 +20,7 @@
   }
 }
 
-.Avatar {
+.Tweet-Avatar {
   width: 70px;
   height: 70px;
   border-radius: 50%;
@@ -50,5 +50,23 @@
   &:hover {
     fill: red;
     opacity: 1;
+  }
+}
+
+.Tweet-Actions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 576px) {
+  .Tweet-Container {
+    padding: 25px 0;
+  }
+
+  .Tweet-Avatar {
+    width: 40px;
+    height: 40px;
   }
 }

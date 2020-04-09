@@ -10,7 +10,7 @@ const Header = ({ imageURL, name }) => {
     <header>
       <div className="container">
         <div className="row">
-          <div className="Avatar">
+          <div className="Header-Avatar">
             {imageURL ? <img src={imageURL} alt="avatar" /> : null}
           </div>
           <div className="col">

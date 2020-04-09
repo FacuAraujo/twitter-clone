@@ -5,14 +5,16 @@ import TweetContext from './context';
 export function useTweets() {
   const {
     state: { tweets },
-    actions: { add, remove }
+    actions: { add, remove, addLike, removeLike },
   } = React.useContext(TweetContext);
 
   return [
-    tweets.map(tweet => ({
+    tweets.map((tweet) => ({
       ...tweet,
-      remove: () => remove(tweet.id)
+      remove: () => remove(tweet.id),
+      removeLike: () => removeLike(tweet.id),
+      addLike: () => addLike(tweet.id),
     })),
-    add
+    add,
   ];
 }

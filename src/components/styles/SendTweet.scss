@@ -41,3 +41,13 @@
   box-shadow: none;
   color: $white;
 }
+
+@media (max-width: 576px) {
+  .Input-Container form {
+    display: block;
+  }
+
+  .Tweet-btn {
+    margin-top: 10px;
+  }
+}

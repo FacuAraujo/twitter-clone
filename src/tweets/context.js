@@ -14,15 +14,26 @@ const TweetProvider = ({ children }) => {
 
   const add = (text, date) => {
     const { uid, displayName, photoURL } = user;
-    api.add({ text, date, uid, displayName, photoURL });
+    const likes = [];
+    api.add({ text, date, uid, displayName, photoURL, likes });
   };
 
-  const remove = id => {
+  const remove = (id) => {
     api.remove(id);
   };
 
+  const addLike = (tweetId) => {
+    const { uid } = user;
+    api.addLike(tweetId, uid);
+  };
+
+  const removeLike = (tweetId) => {
+    const { uid } = user;
+    api.removeLike(tweetId, uid);
+  };
+
   useEffect(() => {
-    api.onChange(tweets => {
+    api.onChange((tweets) => {
       setTweets(tweets);
 
       setIsLoading(false);
@@ -34,7 +45,7 @@ const TweetProvider = ({ children }) => {
   if (isLoading) return <PageLoading />;
 
   const state = { tweets };
-  const actions = { add, remove };
+  const actions = { add, remove, addLike, removeLike };
 
   return (
     <TweetContext.Provider value={{ state, actions }}>

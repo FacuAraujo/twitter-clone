@@ -23,16 +23,31 @@ const TweetsList = () => {
     <div className="container">
       <div className="TweetsList-Container">
         {tweetsOrder.map(
-          ({ id, text, date, displayName, photoURL, uid, remove }) => (
+          ({
+            id,
+            text,
+            date,
+            displayName,
+            photoURL,
+            uid,
+            remove,
+            addLike,
+            removeLike,
+            likes,
+          }) => (
             <Tweet
               key={id}
               id={id}
               text={text}
               remove={remove}
+              uid={uid}
               date={date}
               userName={displayName}
               avatar={photoURL}
               userTweet={user.uid === uid}
+              addLike={addLike}
+              removeLike={removeLike}
+              likes={likes}
             />
           )
         )}
