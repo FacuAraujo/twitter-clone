@@ -6,19 +6,14 @@ import './styles/SendTweet.scss';
 
 const SendTweet = () => {
   const [tweet, setTweet] = useState('');
-  const [enableChar, setEnableChar] = useState(144);
   // eslint-disable-next-line
   const [tweets, add] = useTweets();
 
   const handleChange = (e) => {
-    if (tweet.length < 144) {
-      setTweet(e.target.value);
-      setEnableChar(143 - tweet.length);
-    }
-    return null;
+    setTweet(e.target.value);
   };
 
-  const onSubmit = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     const date = new Date();
     add(tweet, date.getTime());
@@ -27,24 +22,27 @@ const SendTweet = () => {
 
   return (
     <div className="Input-Container">
-      <form onSubmit={onSubmit}>
+      <form onSubmit={handleSubmit}>
         <div className="w-100">
-          <textarea
-            type="text"
-            className="form-control mr-4 Tweet-Area"
-            placeholder="¿Qué está pasando?"
-            onChange={handleChange}
-            value={tweet}
-          />
+          <div className="Tweet-Area-Wrapper">
+            <textarea
+              className="form-control mb-4 Tweet-Area"
+              onChange={handleChange}
+              value={tweet}
+              placeholder="¿Qué está pasando?"
+            ></textarea>
+          </div>
           {tweet && (
-            <small className="text-secondary">
-              Te quedan {enableChar} caracteres
+            <small
+              className={`Chars-Count ${tweet.length > 144 ? 'text-red' : ''}`}
+            >
+              Te quedan {144 - tweet.length} caracteres
             </small>
           )}
         </div>
         <button
           className="btn btn-primary Tweet-btn"
-          disabled={tweet ? false : true}
+          disabled={tweet && tweet.length <= 144 ? false : true}
           type="submit"
         >
           Twittear

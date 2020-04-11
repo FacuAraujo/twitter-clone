@@ -20,13 +20,28 @@
   border-color: $primaryDark;
 }
 
+.Tweet-Area-Wrapper {
+  min-height: 70px;
+  width: 100%;
+  position: relative;
+  white-space: pre-line;
+  word-break: break-word;
+  color: transparent;
+}
+
 .Tweet-Area {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background: none;
   border: none;
   font-size: 20px;
   padding: 0;
   color: $white;
   resize: none;
+  word-break: break-word;
 }
 
 .Tweet-Area:focus::placeholder {
@@ -40,6 +55,14 @@
   padding: 0;
   box-shadow: none;
   color: $white;
+}
+
+.Chars-Count {
+  color: $light;
+}
+
+.text-red {
+  color: #e2264d;
 }
 
 @media (max-width: 576px) {
