@@ -9,7 +9,7 @@ const SendTweet = () => {
   const [enableChar, setEnableChar] = useState(144);
   const [tweets, add] = useTweets();
 
-  const handleChange = e => {
+  const handleChange = (e) => {
     if (tweet.length < 144) {
       setTweet(e.target.value);
       setEnableChar(143 - tweet.length);
@@ -17,7 +17,7 @@ const SendTweet = () => {
     return null;
   };
 
-  const onSubmit = e => {
+  const onSubmit = (e) => {
     e.preventDefault();
     const date = new Date();
     add(tweet, date.getTime());
@@ -28,13 +28,6 @@ const SendTweet = () => {
     <div className="Input-Container">
       <form onSubmit={onSubmit}>
         <div className="w-100">
-          <textarea
-            type="text"
-            className="form-control mr-4 Tweet-Area"
-            placeholder="¿Qué está pasando?"
-            onChange={handleChange}
-            value={tweet}
-          />
           {tweet && (
             <small className="text-secondary">
               Te quedan {enableChar} caracteres
