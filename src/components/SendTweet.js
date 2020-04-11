@@ -7,9 +7,10 @@ import './styles/SendTweet.scss';
 const SendTweet = () => {
   const [tweet, setTweet] = useState('');
   const [enableChar, setEnableChar] = useState(144);
+  // eslint-disable-next-line
   const [tweets, add] = useTweets();
 
-  const handleChange = e => {
+  const handleChange = (e) => {
     if (tweet.length < 144) {
       setTweet(e.target.value);
       setEnableChar(143 - tweet.length);
@@ -17,7 +18,7 @@ const SendTweet = () => {
     return null;
   };
 
-  const onSubmit = e => {
+  const onSubmit = (e) => {
     e.preventDefault();
     const date = new Date();
     add(tweet, date.getTime());
