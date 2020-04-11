@@ -57,6 +57,14 @@
   color: $white;
 }
 
+.Chars-Count {
+  color: $light;
+}
+
+.text-red {
+  color: #e2264d;
+}
+
 @media (max-width: 576px) {
   .Input-Container form {
     display: block;

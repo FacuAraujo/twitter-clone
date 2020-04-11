@@ -6,13 +6,11 @@ import './styles/SendTweet.scss';
 
 const SendTweet = () => {
   const [tweet, setTweet] = useState('');
-  const [enableChar, setEnableChar] = useState(144);
+  // eslint-disable-next-line
   const [tweets, add] = useTweets();
 
   const handleChange = (e) => {
     setTweet(e.target.value);
-    console.log(tweet.length);
-    setEnableChar(145 - tweet.length);
   };
 
   const handleSubmit = (e) => {
@@ -21,9 +19,6 @@ const SendTweet = () => {
     add(tweet, date.getTime());
     setTweet('');
   };
-
-  const isButtonEnable = tweet.length > 0 && tweet.length <= 144;
-  // console.log(tweet.length > 0 && tweet.length <= 144);
 
   return (
     <div className="Input-Container">
@@ -38,14 +33,16 @@ const SendTweet = () => {
             ></textarea>
           </div>
           {tweet && (
-            <small className="text-secondary">
-              Te quedan {enableChar} caracteres
+            <small
+              className={`Chars-Count ${tweet.length > 144 ? 'text-red' : ''}`}
+            >
+              Te quedan {144 - tweet.length} caracteres
             </small>
           )}
         </div>
         <button
           className="btn btn-primary Tweet-btn"
-          disabled={!isButtonEnable}
+          disabled={tweet && tweet.length <= 144 ? false : true}
           type="submit"
         >
           Twittear
@@ -56,6 +53,3 @@ const SendTweet = () => {
 };
 
 export default SendTweet;
-function newFunction() {
-  console.log();
-}
