@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { HashRouter, Switch, Route } from 'react-router-dom';
 
 import PageLoading from '../../components/PageLoading';
 import Login from './Login';
@@ -9,7 +9,7 @@ const Auth = ({ signIn, createAcc, status }) => (
   <div>
     {status === 'init' && <PageLoading />}
     {status === 'restored' && (
-      <BrowserRouter>
+      <HashRouter basename="/">
         <Switch>
           <Route exact path="/">
             <Login signInGoogle={signIn.google} signInEmail={signIn.email} />
@@ -18,7 +18,7 @@ const Auth = ({ signIn, createAcc, status }) => (
             <Register createAcc={createAcc} signInGoogle={signIn.google} />
           </Route>
         </Switch>
-      </BrowserRouter>
+      </HashRouter>
     )}
   </div>
 );
