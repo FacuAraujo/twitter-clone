@@ -10,24 +10,33 @@ const SendTweet = () => {
   const [tweets, add] = useTweets();
 
   const handleChange = (e) => {
-    if (tweet.length < 144) {
-      setTweet(e.target.value);
-      setEnableChar(143 - tweet.length);
-    }
-    return null;
+    setTweet(e.target.value);
+    console.log(tweet.length);
+    setEnableChar(145 - tweet.length);
   };
 
-  const onSubmit = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     const date = new Date();
     add(tweet, date.getTime());
     setTweet('');
   };
 
+  const isButtonEnable = tweet.length > 0 && tweet.length <= 144;
+  // console.log(tweet.length > 0 && tweet.length <= 144);
+
   return (
     <div className="Input-Container">
-      <form onSubmit={onSubmit}>
+      <form onSubmit={handleSubmit}>
         <div className="w-100">
+          <div className="Tweet-Area-Wrapper">
+            <textarea
+              className="form-control mb-4 Tweet-Area"
+              onChange={handleChange}
+              value={tweet}
+              placeholder="¿Qué está pasando?"
+            ></textarea>
+          </div>
           {tweet && (
             <small className="text-secondary">
               Te quedan {enableChar} caracteres
@@ -36,7 +45,7 @@ const SendTweet = () => {
         </div>
         <button
           className="btn btn-primary Tweet-btn"
-          disabled={tweet ? false : true}
+          disabled={!isButtonEnable}
           type="submit"
         >
           Twittear
@@ -47,3 +56,6 @@ const SendTweet = () => {
 };
 
 export default SendTweet;
+function newFunction() {
+  console.log();
+}
