@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5fba995292c5a6e59bfb814124abe81e",
+    "revision": "11dc0846e6b05175155f286ee882fe9e",
     "url": "/twitter-clone/index.html"
   },
   {
-    "revision": "47243d6c14e80cf1705b",
+    "revision": "e10617e2bfebb846798e",
     "url": "/twitter-clone/static/css/2.89f067aa.chunk.css"
   },
   {
-    "revision": "1de753899a9b4a8c3e30",
+    "revision": "e7dc6248d45cc9c9002c",
     "url": "/twitter-clone/static/css/main.817ff423.chunk.css"
   },
   {
-    "revision": "47243d6c14e80cf1705b",
-    "url": "/twitter-clone/static/js/2.7c17fbb4.chunk.js"
+    "revision": "e10617e2bfebb846798e",
+    "url": "/twitter-clone/static/js/2.f2137454.chunk.js"
   },
   {
     "revision": "ad61e5a3703d8af976e070e9896b739a",
-    "url": "/twitter-clone/static/js/2.7c17fbb4.chunk.js.LICENSE.txt"
+    "url": "/twitter-clone/static/js/2.f2137454.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "1de753899a9b4a8c3e30",
-    "url": "/twitter-clone/static/js/main.39e96f5c.chunk.js"
+    "revision": "e7dc6248d45cc9c9002c",
+    "url": "/twitter-clone/static/js/main.18790f74.chunk.js"
   },
   {
     "revision": "06ff6d213d6ae1091a14",
