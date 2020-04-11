@@ -9,10 +9,9 @@ const Like = ({ likes, addLike, removeLike }) => {
   const [isLike, setLike] = useState(null);
 
   useEffect(() => {
-    console.log(likes);
     const userLike = likes.includes(user.uid);
     setLike(userLike);
-  }, []);
+  }, [likes, user.uid]);
 
   const handleClick = () => {
     setLike(!isLike);
