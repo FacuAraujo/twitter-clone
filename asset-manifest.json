@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/twitter-clone/static/css/main.817ff423.chunk.css",
-    "main.js": "/twitter-clone/static/js/main.18790f74.chunk.js",
-    "main.js.map": "/twitter-clone/static/js/main.18790f74.chunk.js.map",
+    "main.css": "/twitter-clone/static/css/main.92886ac7.chunk.css",
+    "main.js": "/twitter-clone/static/js/main.5e6e486d.chunk.js",
+    "main.js.map": "/twitter-clone/static/js/main.5e6e486d.chunk.js.map",
     "runtime-main.js": "/twitter-clone/static/js/runtime-main.ab6ac535.js",
     "runtime-main.js.map": "/twitter-clone/static/js/runtime-main.ab6ac535.js.map",
     "static/css/2.89f067aa.chunk.css": "/twitter-clone/static/css/2.89f067aa.chunk.css",
-    "static/js/2.f2137454.chunk.js": "/twitter-clone/static/js/2.f2137454.chunk.js",
-    "static/js/2.f2137454.chunk.js.map": "/twitter-clone/static/js/2.f2137454.chunk.js.map",
+    "static/js/2.1ff9e056.chunk.js": "/twitter-clone/static/js/2.1ff9e056.chunk.js",
+    "static/js/2.1ff9e056.chunk.js.map": "/twitter-clone/static/js/2.1ff9e056.chunk.js.map",
     "index.html": "/twitter-clone/index.html",
-    "precache-manifest.0acd9de660fd4f056f3693ef618a3d6a.js": "/twitter-clone/precache-manifest.0acd9de660fd4f056f3693ef618a3d6a.js",
+    "precache-manifest.ae631da4d2c096510d3aa3636e4f1b59.js": "/twitter-clone/precache-manifest.ae631da4d2c096510d3aa3636e4f1b59.js",
     "service-worker.js": "/twitter-clone/service-worker.js",
     "static/css/2.89f067aa.chunk.css.map": "/twitter-clone/static/css/2.89f067aa.chunk.css.map",
-    "static/css/main.817ff423.chunk.css.map": "/twitter-clone/static/css/main.817ff423.chunk.css.map",
-    "static/js/2.f2137454.chunk.js.LICENSE.txt": "/twitter-clone/static/js/2.f2137454.chunk.js.LICENSE.txt",
+    "static/css/main.92886ac7.chunk.css.map": "/twitter-clone/static/css/main.92886ac7.chunk.css.map",
+    "static/js/2.1ff9e056.chunk.js.LICENSE.txt": "/twitter-clone/static/js/2.1ff9e056.chunk.js.LICENSE.txt",
     "static/media/Like.scss": "/twitter-clone/static/media/corazon-like.313656d4.png",
     "static/media/google-logo.svg": "/twitter-clone/static/media/google-logo.3ec228d3.svg",
     "static/media/twitter-logo.svg": "/twitter-clone/static/media/twitter-logo.672fae97.svg"
@@ -21,8 +21,8 @@
   "entrypoints": [
     "static/js/runtime-main.ab6ac535.js",
     "static/css/2.89f067aa.chunk.css",
-    "static/js/2.f2137454.chunk.js",
-    "static/css/main.817ff423.chunk.css",
-    "static/js/main.18790f74.chunk.js"
+    "static/js/2.1ff9e056.chunk.js",
+    "static/css/main.92886ac7.chunk.css",
+    "static/js/main.5e6e486d.chunk.js"
   ]
 }
