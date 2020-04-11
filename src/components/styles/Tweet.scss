@@ -20,7 +20,7 @@
   }
 }
 
-.Tweet-Avatar {
+.Tweet-Container .Avatar {
   width: 70px;
   height: 70px;
   border-radius: 50%;
@@ -31,6 +31,12 @@
 .Tweet-Header {
   font-weight: bold;
   margin-bottom: 10px;
+
+  .UserName {
+    color: $light;
+    font-weight: 400;
+    margin-left: 5px;
+  }
 
   .Tweet-Info {
     font-weight: 400;

@@ -13,9 +13,10 @@ const TweetProvider = ({ children }) => {
   const [isLoading, setIsLoading] = useState(false);
 
   const add = (text, date) => {
-    const { uid, displayName, photoURL } = user;
+    const { uid, displayName, photoURL, email } = user;
+    const userName = email.split('@')[0];
     const likes = [];
-    api.add({ text, date, uid, displayName, photoURL, likes });
+    api.add({ text, date, uid, displayName, photoURL, likes, userName });
   };
 
   const remove = (id) => {

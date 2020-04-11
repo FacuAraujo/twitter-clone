@@ -1,0 +1,21 @@
+@import '../../variables';
+
+.User-Profile {
+  margin-bottom: 3em;
+}
+
+.User-Profile .Avatar {
+  width: 134px;
+  height: 134px;
+  margin-bottom: 1rem;
+}
+
+.Profile-Name {
+  font-weight: 900;
+  font-size: 19px;
+}
+
+.Profile-UserName {
+  color: $veryLight;
+  font-size: 15px;
+}

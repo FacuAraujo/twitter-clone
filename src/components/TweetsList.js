@@ -34,6 +34,7 @@ const TweetsList = () => {
             addLike,
             removeLike,
             likes,
+            userName,
           }) => (
             <Tweet
               key={id}
@@ -42,12 +43,13 @@ const TweetsList = () => {
               remove={remove}
               uid={uid}
               date={date}
-              userName={displayName}
+              profileName={displayName}
               avatar={photoURL}
               userTweet={user.uid === uid}
               addLike={addLike}
               removeLike={removeLike}
               likes={likes}
+              userName={userName}
             />
           )
         )}

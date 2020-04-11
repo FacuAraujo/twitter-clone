@@ -1,0 +1,35 @@
+@import '../../variables';
+
+.User-Header-Container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.Header-User {
+  font-weight: 900;
+  font-size: 19px;
+}
+
+.Header-Tweets {
+  color: $veryLight;
+  font-size: 13px;
+}
+
+.User-Header-Container .arrow {
+  background-color: $primary;
+  transform: scaleX(-1);
+  width: 18px;
+  height: 2px;
+  border-radius: 1px;
+  margin-right: 30px;
+
+  &::after {
+    border-color: $primary;
+    border-width: 2px;
+    height: 12px;
+    width: 12px;
+    top: -5px;
+    border-radius: 1px;
+  }
+}

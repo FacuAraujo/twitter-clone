@@ -1,21 +1,24 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import auth from '../session/api';
 
-import './styles/Header.scss';
 import SendTweet from './SendTweet';
+import Avatar from './Avatar';
+
+import './styles/Header.scss';
 
 const Header = ({ imageURL, name }) => {
   return (
     <header>
       <div className="container">
         <div className="row">
-          <div className="Header-Avatar">
-            {imageURL ? <img src={imageURL} alt="avatar" /> : null}
-          </div>
+          <Link to="/profile">
+            <Avatar imageURL={imageURL} />
+          </Link>
           <div className="col">
             <h1 className="User-Name">
-              {name}{' '}
+              <Link to="/profile">{name}</Link>
               <span className="LogOut" onClick={() => auth.signOut()}>
                 Cerrar sesión
               </span>

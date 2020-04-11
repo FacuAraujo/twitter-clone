@@ -1,6 +1,7 @@
 import React from 'react';
 
 import DeleteTweet from './DeleteTweet';
+import Avatar from './Avatar';
 import Like from './Like';
 
 import './styles/Tweet.scss';
@@ -9,12 +10,13 @@ const Tweet = ({
   text,
   remove,
   date,
-  userName,
   avatar,
   userTweet,
   likes,
   removeLike,
   addLike,
+  userName,
+  profileName,
 }) => {
   const tweetDate = (date) => {
     const actualDate = new Date();
@@ -37,12 +39,11 @@ const Tweet = ({
 
   return (
     <div className="Tweet-Container">
-      <div className="Tweet-Avatar">
-        <img src={avatar} alt="avatar" />
-      </div>
+      <Avatar imageURL={avatar} />
       <div className="col Tweet-Content">
         <div className="Tweet-Header">
-          {userName}
+          <span>{profileName}</span>
+          <span className="UserName">@{userName}</span>
           <span className="Tweet-Info">• {tweetDate(date)}</span>
         </div>
         {text}
