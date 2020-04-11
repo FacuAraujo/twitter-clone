@@ -24,22 +24,20 @@ const SendTweet = () => {
     <div className="Input-Container">
       <form onSubmit={handleSubmit}>
         <div className="w-100">
-          <div className="Tweet-Area-Wrapper">
-            <textarea
-              className="form-control mb-4 Tweet-Area"
-              onChange={handleChange}
-              value={tweet}
-              placeholder="¿Qué está pasando?"
-            ></textarea>
-          </div>
-          {tweet && (
-            <small
-              className={`Chars-Count ${tweet.length > 144 ? 'text-red' : ''}`}
-            >
-              Te quedan {144 - tweet.length} caracteres
-            </small>
-          )}
+          <textarea
+            className="form-control mb-4 Tweet-Area"
+            onChange={handleChange}
+            value={tweet}
+            placeholder="¿Qué está pasando?"
+          ></textarea>
         </div>
+        {tweet && (
+          <small
+            className={`Chars-Count ${tweet.length > 144 ? 'text-red' : ''}`}
+          >
+            Te quedan {144 - tweet.length} caracteres
+          </small>
+        )}
         <button
           className="btn btn-primary Tweet-btn"
           disabled={tweet && tweet.length <= 144 ? false : true}
