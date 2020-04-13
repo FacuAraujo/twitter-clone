@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/twitter-clone/static/css/main.92886ac7.chunk.css",
-    "main.js": "/twitter-clone/static/js/main.7b7010f7.chunk.js",
-    "main.js.map": "/twitter-clone/static/js/main.7b7010f7.chunk.js.map",
-    "runtime-main.js": "/twitter-clone/static/js/runtime-main.ab6ac535.js",
-    "runtime-main.js.map": "/twitter-clone/static/js/runtime-main.ab6ac535.js.map",
-    "static/css/2.89f067aa.chunk.css": "/twitter-clone/static/css/2.89f067aa.chunk.css",
-    "static/js/2.1ff9e056.chunk.js": "/twitter-clone/static/js/2.1ff9e056.chunk.js",
-    "static/js/2.1ff9e056.chunk.js.map": "/twitter-clone/static/js/2.1ff9e056.chunk.js.map",
-    "index.html": "/twitter-clone/index.html",
-    "precache-manifest.a2a1470b2d2faa5e61f626f548dc98bc.js": "/twitter-clone/precache-manifest.a2a1470b2d2faa5e61f626f548dc98bc.js",
-    "service-worker.js": "/twitter-clone/service-worker.js",
-    "static/css/2.89f067aa.chunk.css.map": "/twitter-clone/static/css/2.89f067aa.chunk.css.map",
-    "static/css/main.92886ac7.chunk.css.map": "/twitter-clone/static/css/main.92886ac7.chunk.css.map",
-    "static/js/2.1ff9e056.chunk.js.LICENSE.txt": "/twitter-clone/static/js/2.1ff9e056.chunk.js.LICENSE.txt",
-    "static/media/Like.scss": "/twitter-clone/static/media/corazon-like.313656d4.png",
-    "static/media/google-logo.svg": "/twitter-clone/static/media/google-logo.3ec228d3.svg",
-    "static/media/twitter-logo.svg": "/twitter-clone/static/media/twitter-logo.672fae97.svg"
+    "main.css": "/static/css/main.e44ea9ef.chunk.css",
+    "main.js": "/static/js/main.7b7010f7.chunk.js",
+    "main.js.map": "/static/js/main.7b7010f7.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.9f6049bc.js",
+    "runtime-main.js.map": "/static/js/runtime-main.9f6049bc.js.map",
+    "static/css/2.89f067aa.chunk.css": "/static/css/2.89f067aa.chunk.css",
+    "static/js/2.f6162b48.chunk.js": "/static/js/2.f6162b48.chunk.js",
+    "static/js/2.f6162b48.chunk.js.map": "/static/js/2.f6162b48.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.813bf74e43d53b1efdaf8a1ca72fd6d7.js": "/precache-manifest.813bf74e43d53b1efdaf8a1ca72fd6d7.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.89f067aa.chunk.css.map": "/static/css/2.89f067aa.chunk.css.map",
+    "static/css/main.e44ea9ef.chunk.css.map": "/static/css/main.e44ea9ef.chunk.css.map",
+    "static/js/2.f6162b48.chunk.js.LICENSE.txt": "/static/js/2.f6162b48.chunk.js.LICENSE.txt",
+    "static/media/Like.scss": "/static/media/corazon-like.313656d4.png",
+    "static/media/google-logo.svg": "/static/media/google-logo.3ec228d3.svg",
+    "static/media/twitter-logo.svg": "/static/media/twitter-logo.672fae97.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.ab6ac535.js",
+    "static/js/runtime-main.9f6049bc.js",
     "static/css/2.89f067aa.chunk.css",
-    "static/js/2.1ff9e056.chunk.js",
-    "static/css/main.92886ac7.chunk.css",
+    "static/js/2.f6162b48.chunk.js",
+    "static/css/main.e44ea9ef.chunk.css",
     "static/js/main.7b7010f7.chunk.js"
   ]
 }
