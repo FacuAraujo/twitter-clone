@@ -10,14 +10,14 @@ import GoogleSignIn from '../components/GoogleSignIn';
 const Login = ({ signInGoogle, signInEmail }) => (
   <section className="Login-Container">
     <img src={TwitterLogo} alt="twitter logo" className="Twitter-Logo" />
-    <h1 className="Login-Header">Iniciar sesión en TwitterClone</h1>
+    <h1 className="Login-Header">Iniciar sesión en Aswitter</h1>
     <LoginForm signInEmail={signInEmail} />
     <GoogleSignIn
       signInGoogle={signInGoogle}
       text="Iniciar sesión con Google"
     />
     <Link to="/register" className="primary Login-Link">
-      ¿Aún no tenes cuenta? Regístrate en TwitterClone
+      ¿Aún no tenes cuenta? Regístrate en Aswitter
     </Link>
   </section>
 );
